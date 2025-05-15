@@ -5,7 +5,7 @@ app.initializers.add('fof-username-request', () => {
     .for('fof-username-request')
     .registerPermission(
       {
-        icon: 'fa fa-user-edit',
+        icon: 'fas fa-user-edit',
         label: app.translator.trans('fof-username-request.admin.permissions.moderate_requests'),
         permission: 'user.viewUsernameRequests',
       },
@@ -13,7 +13,7 @@ app.initializers.add('fof-username-request', () => {
     )
     .registerPermission(
       {
-        icon: 'fa fa-user-edit',
+        icon: 'fas fa-user-edit',
         label: app.translator.trans('fof-username-request.admin.permissions.request_username'),
         permission: 'user.requestUsername',
       },
@@ -21,7 +21,7 @@ app.initializers.add('fof-username-request', () => {
     )
     .registerPermission(
       {
-        icon: 'fa fa-user-edit',
+        icon: 'fas fa-user-edit',
         label: app.translator.trans('fof-username-request.admin.permissions.request_nickname'),
         permission: 'user.requestNickname',
       },
