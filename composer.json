@@ -9,20 +9,17 @@
     "license": "MIT",
     "support": {
         "issues": "https://github.com/FriendsOfFlarum/username-request/issues",
-        "source": "https://github.com/FriendsOfFlarum/username-request",
-        "forum": "https://discuss.flarum.org/d/20956"
+        "source": "https://github.com/FriendsOfFlarum/username-request"
     },
-    "homepage": "https://friendsofflarum.org",
-    "funding": [
-        {
-            "type": "website",
-            "url": "https://opencollective.com/fof/donate"
-        }
-    ],
     "require": {
         "flarum/core": "^1.8.0"
     },
     "authors": [
+        {
+            "name": "piwind",
+            "homepage": "https://github.com/piwind",
+            "role": "Developer"
+        },
         {
             "name": "FoF Team",
             "email": "team@friendsofflarum.org",
@@ -46,9 +43,6 @@
             "optional-dependencies": [
                 "flarum/nicknames"
             ]
-        },
-        "flagrow": {
-            "discuss": "https://discuss.flarum.org/d/20956"
         },
         "flarum-cli": {
             "modules": {
