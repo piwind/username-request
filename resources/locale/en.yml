@@ -31,7 +31,7 @@ fof-username-request:
         delete_button: Delete Request
         confirmation_message: Your nickname change request has been submitted and is pending approval.
         dismiss_button: => core.ref.okay
-        deleted: Nickname request deleted.
+        deleted: Nickname change request deleted.
 
     username_modals:
       action:
@@ -59,7 +59,7 @@ fof-username-request:
         delete_button: Delete Request
         confirmation_message: Your username change request has been submitted and is pending approval.
         dismiss_button: => core.ref.okay
-        deleted: Username request deleted.
+        deleted: Username change request deleted.
 
     # Pending Requests Dropdown and List
     pending_requests:
@@ -73,8 +73,8 @@ fof-username-request:
 
     # Settings Page
     settings:
-      nickname_request_button: Change Nickname
-      username_request_button: Change Username
+      nickname_request_button: Request Nickname Change
+      username_request_button: Request Username Change
 
     user:
       name_history_link: Name History
@@ -103,5 +103,5 @@ fof-username-request:
 
         Reason: {reason}
     subject:
-      approved: "{display_name} approved your username change to {requested_username}"
-      rejected: "{display_name} rejected your username change to {requested_username}"
+      approved: "Your username change request has been approved"
+      rejected: "Your username change request has been rejected"
