@@ -4,6 +4,7 @@ fof-username-request:
       moderate_requests: Approve username/nickname change requests
       request_nickname: Request nickname change
       request_username: Request username change
+
   forum:
     nickname_modals:
       action:
@@ -105,3 +106,22 @@ fof-username-request:
     subject:
       approved: "Your username change request has been approved"
       rejected: "Your username change request has been rejected"
+
+  email_for_nickname:
+    body:
+      noReasonProvided: 'No reason provided.'
+      approved: |
+        Hello {recipient_display_name},
+
+        Your request to change your nickname has been approved by {actor_display_name}.
+
+        Your new nickname: "{new_nickname}"
+      rejected: |
+        Hello {recipient_display_name},
+        
+        Your request to change your nickname from "{old_nickname}" to "{requested_nickname}" has been rejected by {actor_display_name}.
+
+        Reason: {reason}
+    subject:
+      approved: "Your nickname change request has been approved"
+      rejected: "Your nickname change request has been rejected"

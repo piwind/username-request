@@ -17,6 +17,8 @@ use Flarum\User\UserRepository;
 use Flarum\User\UserValidator;
 use FoF\UserRequest\Notification\RequestApprovedBlueprint;
 use FoF\UserRequest\Notification\RequestRejectedBlueprint;
+use FoF\UserRequest\Notification\NicknameRequestApprovedBlueprint;
+use FoF\UserRequest\Notification\NicknameRequestRejectedBlueprint;
 use FoF\UserRequest\UsernameRequest;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Support\Str;
@@ -116,9 +118,19 @@ class ActOnRequestHandler
         $usernameRequest->save();
 
         if ($usernameRequest->status === 'Approved') {
-            $this->notificatons->sync(new RequestApprovedBlueprint($usernameRequest, $actor), [$user]);
+            $this->notificatons->sync(
+                $usernameRequest->for_nickname
+                    ? new NicknameRequestApprovedBlueprint($usernameRequest, $actor)
+                    : new RequestApprovedBlueprint($usernameRequest, $actor),
+                [$user]
+            );
         } else {
-            $this->notificatons->sync(new RequestRejectedBlueprint($usernameRequest, $actor), [$user]);
+            $this->notificatons->sync(
+                $usernameRequest->for_nickname
+                    ? new NicknameRequestRejectedBlueprint($usernameRequest, $actor)
+                    : new RequestRejectedBlueprint($usernameRequest, $actor),
+                [$user]
+            );
         }
 
         return $usernameRequest;

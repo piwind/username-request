@@ -4,6 +4,7 @@ fof-username-request:
       moderate_requests: 受理用户名/昵称更改申请
       request_nickname: 申请更改昵称
       request_username: 申请更改用户名
+
   forum:
     nickname_modals:
       action:
@@ -105,3 +106,22 @@ fof-username-request:
     subject:
       approved: "用户名更改申请已通过"
       rejected: "用户名更改申请已驳回"
+
+  email_for_nickname:
+    body:
+      noReasonProvided: '未说明原因'
+      approved: |
+        {recipient_display_name}，你好!
+
+        「{actor_display_name}」通过了你的昵称更改申请。
+
+        你的新昵称是「{new_nickname}」
+      rejected: |
+        {recipient_display_name}，你好！
+        
+        「{actor_display_name}」驳回了你将昵称从「{old_nickname}」更改为「{requested_nickname}」的申请。
+
+        原因为：{reason}
+    subject:
+      approved: "昵称更改申请已通过"
+      rejected: "昵称更改申请已驳回"
