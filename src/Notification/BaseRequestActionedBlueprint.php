@@ -84,8 +84,9 @@ class BaseRequestActionedBlueprint
     public function getEmailSubject(TranslatorInterface $translator)
     {
         $status = $this->usernameRequest->status === 'Approved' ? 'approved' : 'rejected';
+        $type = $this->usernameRequest->for_nickname ? 'email_for_nickname' : 'email';
 
-        return $translator->trans('piwind-username-request.email.subject.'.$status, [
+        return $translator->trans("piwind-username-request.{$type}.subject.{$status}", [
             '{display_name}'          => $this->actor->display_name,
             '{requested_username}'    => $this->getRequestedUsername(),
         ]);
