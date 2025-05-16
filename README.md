@@ -36,8 +36,9 @@ composer update piwind/username-request
 
 With these permission settings, the user settings page will display only **one** nickname change button (instead of two duplicate buttons) for all non-admin accounts.
 
-如果更改昵称是开放的，则插件 `flarum/nicknames` 中的 `更改个人昵称` 的权限设置为 `注册用户`，本插件的 `申请更改昵称` 的权限设置为 `管理`。
-如果更改昵称需要申请并审核通过，则插件 `flarum/nicknames` 中的 `更改个人昵称` 的权限设置为 `管理`，本插件的 `申请更改昵称` 的权限设置为 `注册用户`。
+如果更改昵称是开放的，则插件 `flarum/nicknames` 中的 **"更改个人昵称"** 的权限设置为 **"注册用户"**，本插件的 **"申请更改昵称"** 的权限设置为 **"管理"**。
+
+如果更改昵称需要申请并审核通过，则插件 `flarum/nicknames` 中的 **"更改个人昵称"** 的权限设置为 **"管理"**，本插件的 **"申请更改昵称"** 的权限设置为 **"注册用户"**。
 
 基于以上权限设置，能确保除了管理员之外的所有账户，用户设置页都是只显示一个更改昵称的按钮，而不是两个重复的按钮。
 
