@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace FoF\UserRequest\Api\Controller;
+namespace Piwind\UserRequest\Api\Controller;
 
 use Flarum\Api\Controller\AbstractListController;
 use Flarum\Http\RequestUtil;
-use FoF\UserRequest\Api\Serializer\RequestSerializer;
-use FoF\UserRequest\UsernameRequest;
+use Piwind\UserRequest\Api\Serializer\RequestSerializer;
+use Piwind\UserRequest\UsernameRequest;
 use Psr\Http\Message\ServerRequestInterface;
 use Tobscure\JsonApi\Document;
 

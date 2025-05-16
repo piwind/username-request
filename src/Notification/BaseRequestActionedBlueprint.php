@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace FoF\UserRequest\Notification;
+namespace Piwind\UserRequest\Notification;
 
 use Carbon\Carbon;
 use Flarum\User\User;
-use FoF\UserRequest\UsernameRequest;
+use Piwind\UserRequest\UsernameRequest;
 use Symfony\Contracts\Translation\TranslatorInterface;
 
 class BaseRequestActionedBlueprint
@@ -85,7 +85,7 @@ class BaseRequestActionedBlueprint
     {
         $status = $this->usernameRequest->status === 'Approved' ? 'approved' : 'rejected';
 
-        return $translator->trans('fof-username-request.email.subject.'.$status, [
+        return $translator->trans('piwind-username-request.email.subject.'.$status, [
             '{display_name}'          => $this->actor->display_name,
             '{requested_username}'    => $this->getRequestedUsername(),
         ]);

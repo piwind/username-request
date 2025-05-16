@@ -1,4 +1,4 @@
-{!! $translator->trans('fof-username-request.email.body.approved', [
+{!! $translator->trans('piwind-username-request.email.body.approved', [
     '{recipient_display_name}' => $user->display_name,
     '{actor_display_name}' => $blueprint->actor->display_name,
     '{new_username}' => $blueprint->getRequestedUsername(),

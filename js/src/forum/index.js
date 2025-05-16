@@ -10,7 +10,7 @@ import ProfilePage from './components/ProfilePage';
 import addProfilePage from './addProfilePage';
 import RequestsListState from './states/RequestsListState';
 
-app.initializers.add('fof-username-request', () => {
+app.initializers.add('piwind-username-request', () => {
   app.store.models['username-requests'] = UsernameRequest;
   User.prototype.lastNicknameRequest = Model.hasOne('lastNicknameRequest');
   User.prototype.lastUsernameRequest = Model.hasOne('lastUsernameRequest');

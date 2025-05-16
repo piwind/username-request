@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace FoF\UserRequest\Command;
+namespace Piwind\UserRequest\Command;
 
 class DeleteRequestHandler
 {

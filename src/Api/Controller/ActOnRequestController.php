@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace FoF\UserRequest\Api\Controller;
+namespace Piwind\UserRequest\Api\Controller;
 
 use Flarum\Api\Controller\AbstractShowController;
 use Flarum\Http\RequestUtil;
-use FoF\UserRequest\Api\Serializer\RequestSerializer;
-use FoF\UserRequest\Command\ActOnRequest;
+use Piwind\UserRequest\Api\Serializer\RequestSerializer;
+use Piwind\UserRequest\Command\ActOnRequest;
 use Illuminate\Contracts\Bus\Dispatcher;
 use Illuminate\Support\Arr;
 use Psr\Http\Message\ServerRequestInterface;

@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace FoF\UserRequest\Command;
+namespace Piwind\UserRequest\Command;
 
 use Carbon\Carbon;
 use Flarum\User\UserValidator;
-use FoF\UserRequest\UsernameRequest;
+use Piwind\UserRequest\UsernameRequest;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 

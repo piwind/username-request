@@ -19,7 +19,7 @@ export default class RequestModal extends Modal {
 
     this.password = Stream('');
 
-    this.translationPrefix = `fof-username-request.forum.${this.attrs.nickname ? 'nickname' : 'username'}_modals.request`;
+    this.translationPrefix = `piwind-username-request.forum.${this.attrs.nickname ? 'nickname' : 'username'}_modals.request`;
   }
 
   className() {

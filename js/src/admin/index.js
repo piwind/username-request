@@ -1,12 +1,12 @@
 import app from 'flarum/admin/app';
 
-app.initializers.add('fof-username-request', () => {
+app.initializers.add('piwind-username-request', () => {
   app.extensionData
-    .for('fof-username-request')
+    .for('piwind-username-request')
     .registerPermission(
       {
         icon: 'fas fa-user-edit',
-        label: app.translator.trans('fof-username-request.admin.permissions.moderate_requests'),
+        label: app.translator.trans('piwind-username-request.admin.permissions.moderate_requests'),
         permission: 'user.viewUsernameRequests',
       },
       'moderate'
@@ -14,7 +14,7 @@ app.initializers.add('fof-username-request', () => {
     .registerPermission(
       {
         icon: 'fas fa-user-edit',
-        label: app.translator.trans('fof-username-request.admin.permissions.request_username'),
+        label: app.translator.trans('piwind-username-request.admin.permissions.request_username'),
         permission: 'user.requestUsername',
       },
       'start'
@@ -22,7 +22,7 @@ app.initializers.add('fof-username-request', () => {
     .registerPermission(
       {
         icon: 'fas fa-user-edit',
-        label: app.translator.trans('fof-username-request.admin.permissions.request_nickname'),
+        label: app.translator.trans('piwind-username-request.admin.permissions.request_nickname'),
         permission: 'user.requestNickname',
       },
       'start'

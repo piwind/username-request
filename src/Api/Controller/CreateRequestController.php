@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace FoF\UserRequest\Api\Controller;
+namespace Piwind\UserRequest\Api\Controller;
 
 use Flarum\Api\Controller\AbstractCreateController;
 use Flarum\Http\RequestUtil;
 use Flarum\User\Exception\NotAuthenticatedException;
-use FoF\UserRequest\Api\Serializer\RequestSerializer;
-use FoF\UserRequest\Command\CreateRequest;
+use Piwind\UserRequest\Api\Serializer\RequestSerializer;
+use Piwind\UserRequest\Command\CreateRequest;
 use Illuminate\Contracts\Bus\Dispatcher;
 use Illuminate\Support\Arr;
 use Psr\Http\Message\ServerRequestInterface;

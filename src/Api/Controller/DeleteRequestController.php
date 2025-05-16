@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace FoF\UserRequest\Api\Controller;
+namespace Piwind\UserRequest\Api\Controller;
 
 use Flarum\Api\Controller\AbstractDeleteController;
-use FoF\UserRequest\Command\DeleteRequest;
+use Piwind\UserRequest\Command\DeleteRequest;
 use Illuminate\Contracts\Bus\Dispatcher;
 use Illuminate\Support\Arr;
 use Psr\Http\Message\ServerRequestInterface;

@@ -9,17 +9,17 @@
  * file that was distributed with this source code.
  */
 
-namespace FoF\UserRequest\Command;
+namespace Piwind\UserRequest\Command;
 
 use Flarum\Notification\NotificationSyncer;
 use Flarum\User\Event\Renamed;
 use Flarum\User\UserRepository;
 use Flarum\User\UserValidator;
-use FoF\UserRequest\Notification\RequestApprovedBlueprint;
-use FoF\UserRequest\Notification\RequestRejectedBlueprint;
-use FoF\UserRequest\Notification\NicknameRequestApprovedBlueprint;
-use FoF\UserRequest\Notification\NicknameRequestRejectedBlueprint;
-use FoF\UserRequest\UsernameRequest;
+use Piwind\UserRequest\Notification\RequestApprovedBlueprint;
+use Piwind\UserRequest\Notification\RequestRejectedBlueprint;
+use Piwind\UserRequest\Notification\NicknameRequestApprovedBlueprint;
+use Piwind\UserRequest\Notification\NicknameRequestRejectedBlueprint;
+use Piwind\UserRequest\UsernameRequest;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Support\Str;
 

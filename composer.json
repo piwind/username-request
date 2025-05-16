@@ -1,5 +1,5 @@
 {
-    "name": "fof/username-request",
+    "name": "piwind/username-request",
     "description": "Allow users to request new usernames",
     "keywords": [
         "flarum",
@@ -8,8 +8,8 @@
     "type": "flarum-extension",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/FriendsOfFlarum/username-request/issues",
-        "source": "https://github.com/FriendsOfFlarum/username-request"
+        "issues": "https://github.com/piwind/username-request/issues",
+        "source": "https://github.com/piwind/username-request"
     },
     "require": {
         "flarum/core": "^1.8.0"
@@ -28,12 +28,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "FoF\\UserRequest\\": "src/"
+            "Piwind\\UserRequest\\": "src/"
         }
     },
     "extra": {
         "flarum-extension": {
-            "title": "FoF Username Request",
+            "title": "Username Request",
             "category": "feature",
             "icon": {
                 "name": "fas fa-user-edit",

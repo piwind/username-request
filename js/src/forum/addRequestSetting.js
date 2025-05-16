@@ -16,7 +16,7 @@ export default function () {
               app.modal.show(RequestModal);
             },
           },
-          app.translator.trans('fof-username-request.forum.settings.username_request_button')
+          app.translator.trans('piwind-username-request.forum.settings.username_request_button')
         ),
         8
       );
@@ -36,7 +36,7 @@ export default function () {
               app.modal.show(RequestModal, { nickname: true });
             },
           },
-          app.translator.trans('fof-username-request.forum.settings.nickname_request_button')
+          app.translator.trans('piwind-username-request.forum.settings.nickname_request_button')
         ),
         8
       );

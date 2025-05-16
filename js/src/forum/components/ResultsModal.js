@@ -11,7 +11,7 @@ export default class ResultsModal extends Modal {
 
     this.request = app.session.user[this.userRequestAttr]();
 
-    this.translationPrefix = `fof-username-request.forum.${this.request.forNickname() ? 'nickname' : 'username'}_modals.results`;
+    this.translationPrefix = `piwind-username-request.forum.${this.request.forNickname() ? 'nickname' : 'username'}_modals.results`;
   }
 
   className() {

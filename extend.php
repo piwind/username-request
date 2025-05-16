@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace FoF\UserRequest;
+namespace Piwind\UserRequest;
 
 use Flarum\Api\Controller\ListUsersController;
 use Flarum\Api\Controller\ShowForumController;
@@ -17,8 +17,8 @@ use Flarum\Api\Controller\ShowUserController;
 use Flarum\Api\Serializer;
 use Flarum\Extend;
 use Flarum\User\User;
-use FoF\UserRequest\Api\Controller;
-use FoF\UserRequest\Api\Serializer\RequestSerializer;
+use Piwind\UserRequest\Api\Controller;
+use Piwind\UserRequest\Api\Serializer\RequestSerializer;
 
 return [
     (new Extend\Frontend('forum'))
@@ -83,5 +83,5 @@ return [
         ->type(Notification\NicknameRequestRejectedBlueprint::class, Api\Serializer\RequestSerializer::class, ['email']),
 
     (new Extend\View())
-        ->namespace('fof-username-request', __DIR__.'/resources/views'),
+        ->namespace('piwind-username-request', __DIR__.'/resources/views'),
 ];

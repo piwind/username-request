@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace FoF\UserRequest\Notification;
+namespace Piwind\UserRequest\Notification;
 
 use Flarum\Notification\Blueprint\BlueprintInterface;
 use Flarum\Notification\MailableInterface;
@@ -33,6 +33,6 @@ class RequestApprovedBlueprint extends BaseRequestActionedBlueprint implements B
      */
     public function getEmailView()
     {
-        return ['text' => 'fof-username-request::emails.usernameRequestApproved'];
+        return ['text' => 'piwind-username-request::emails.usernameRequestApproved'];
     }
 }

@@ -15,7 +15,7 @@ export default class ActionModal extends Modal {
 
     this.reason = Stream('');
 
-    this.translationPrefix = `fof-username-request.forum.${this.request.forNickname() ? 'nickname' : 'username'}_modals.action`;
+    this.translationPrefix = `piwind-username-request.forum.${this.request.forNickname() ? 'nickname' : 'username'}_modals.action`;
   }
 
   title() {

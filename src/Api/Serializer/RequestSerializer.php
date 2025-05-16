@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace FoF\UserRequest\Api\Serializer;
+namespace Piwind\UserRequest\Api\Serializer;
 
 use Flarum\Api\Serializer\AbstractSerializer;
 use Flarum\Api\Serializer\BasicUserSerializer;
@@ -19,7 +19,7 @@ class RequestSerializer extends AbstractSerializer
     protected $type = 'username-requests';
 
     /**
-     * @param \FoF\UserRequest\UsernameRequest $username_request
+     * @param \Piwind\UserRequest\UsernameRequest $username_request
      */
     protected function getDefaultAttributes($username_request)
     {

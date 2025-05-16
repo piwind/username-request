@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace FoF\UserRequest;
+namespace Piwind\UserRequest;
 
 use Flarum\Api\Controller\ShowForumController;
 use Flarum\Http\RequestUtil;
