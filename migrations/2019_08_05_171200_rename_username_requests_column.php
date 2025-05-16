@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of fof/username-request.
+ * This file is part of username-request.
  *
  * Copyright (c) FriendsOfFlarum.
  *
