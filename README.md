@@ -45,6 +45,8 @@ With these permission settings, the user settings page will display only **one**
 ## TODO
 
 - resources/views/emails/nicknameRequestRejected.blade.php 下的old_nickname用的是$user->display_name，这个是不一定的
+- 申请更改用户名、申请更改昵称，点按钮后如果已经有提交的申请会弹出不同的窗口，但是刷新网页后无法看到申请的状态（是否已经提交申请请求）
+- 限制n天内只能修改一次用户名/昵称
 
 ## Links
 
