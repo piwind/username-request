@@ -78,7 +78,7 @@ piwind-username-request:
       username_request_button: Request Username Change
 
     user:
-      name_history_link: Name History
+      name_history_link: Username History
 
   ref:
     name_change_request: Name Change Request
